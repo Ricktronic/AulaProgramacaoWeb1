@@ -2,33 +2,44 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projetos Sociais</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/scripts.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Projetos Sociais</h1>
-    <nav>
+    <button id="menu-toggle">☰</button>
+    <nav id="main-nav">
       <ul>
         <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
+        <li>
+          <a href="projetos.html">Projetos</a>
+          <ul class="submenu">
+            <li><a href="#">Voluntariado</a></li>
+            <li><a href="#">Doações</a></li>
+          </ul>
+        </li>
         <li><a href="cadastro.html">Cadastro</a></li>
       </ul>
     </nav>
+    <h1>Projetos Sociais</h1>
   </header>
 
   <main>
-    <section>
+    <div class="card">
       <h2>Voluntariado</h2>
       <p>Participe dos nossos projetos como voluntário e faça a diferença!</p>
-      <img src="imagens/projetos/projetos.webp" alt="Voluntários em ação" width="200"/>
-    </section>
+      <img src="imagens/projetos/projetos.webp" alt="Voluntários em ação" />
+      <span class="badge">Ação Comunitária</span>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Como Doar</h2>
       <p>Você pode doar alimentos, roupas ou contribuir financeiramente.</p>
-      <img src="imagens/doações.jpg" alt="Doações sendo entregues" width="200"/>
-    </section>
+      <img src="imagens/doações.jpg" alt="Doações sendo entregues" />
+      <span class="badge">Campanha Ativa</span>
+    </div>
   </main>
 
   <footer>
